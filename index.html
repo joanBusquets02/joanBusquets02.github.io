@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joan Busquets's CV</title>
+        <!-- <author>Joan Busquets i Frigola</author> -->
+        <meta charset="utf8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-icon" href="joan_busquets.jpeg">
+        <script src="behaviour.js" type="text/javascript"></script>
+    </head>
+    
+    <body onload="calculateAge()">
+        
+        <div style="width: 100%" class="head">
+            <div class="title">
+                <h1>Currículum Vitae</h1>
+            </div>
+            <div class="image">
+                <img src="joan_busquets.jpeg"/>
+            </div>
+        </div>
+
+
+        <button class="accordion" onclick="showHideSection(1)">Informació Personal</button>
+        <div class="section" id ="section1">
+            <ul>
+                <li><b>Nom i cognoms:</b> Joan Busquets i Frigola</li>
+                <li><b>Data de naixement:</b> 09/03/2002 (edat: <bdi id="age">edat</bdi> anys)</li>
+                <li><b>Codi Postal:</b> 17244</li>
+                <li><b>Població:</b> Cassà de la Selva</li>
+                <li><b>Província:</b> Girona</li>
+                <li><b>País:</b> Spain</li>
+                </li>
+                <li><b>Dades de contacte:</b>
+                    <ul>
+                        <li><b>Número de telèfon:</b> +34 640 636 182</li>
+                        <li><b>Direcció de correu electrònic:</b> <a href="mailto:jbusquetsfri@gmail.com">jbusquetsfri@gmail.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(2)">Experiència Professional</button>
+        <div class="section" id ="section2">
+            <table>
+                <tr>
+                    <th>Data inicial</th>
+                    <th>Data final</th>
+                    <th>Descripció</th>
+                    <th>Empresa</th>
+                    <th>Població</th>
+                </tr>
+                <tr>
+                    <td>10/08/2022</td>
+                    <td>31/08/2022</td>
+                    <td>Expenedor</td>
+                    <td>E.S. Jesús Ortiz Ortin</td>
+                    <td>Girona</td>
+                </tr>
+                <tr>
+                    <td>31/03/2021</td>
+                    <td>12/07/2022</td>
+                    <td>Aprenent d'Expenedor</td>
+                    <td>.E.S. Rabell, S.L.U.</td>
+                    <td>Cassà de la Selva</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(3)">Formació Reglada</button>
+        <div class="section" id ="section3">
+            <table>
+                <tr>
+                    <th>Durada</th>
+                    <th>Descripció</th>
+                    <th>Centre</th>
+                    <th>Població</th>
+                </tr>
+                <tr>
+                    <td>2020 - actualitat</td>
+                    <td>Grau en Enginyeria Informàtica (GEINF)</td>
+                    <td>Universitat de Girona (UdG)</td>
+                    <td>Girona</td>
+                </tr>
+                <tr>
+                    <td>2018-2020</td>
+                    <td>Batxillerat Tecnològic</td>
+                    <td>INS Cassà de la Selva</td>
+                    <td>Cassà de la Selva</td>
+                </tr>
+                <tr>
+                    <td>2014-2018</td>
+                    <td>Educació Secundària Obligatòria</td>
+                    <td>FEDAC - Sant Narcís</td>
+                    <td>Girona</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(4)">Formació Complemetària</button>
+        <div class="section" id ="section4">
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Descripció</th>
+                    <th>Centre</th>
+                </tr>
+                <tr>
+                    <td>02/2019</td>
+                    <td>Carnet de Manipulador d'Aliments</td>
+                    <td><a href="https://www.manipulador-de-alimentos.es/">Manipulador de Alimentos</a> (lloc web oficial)</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(5)">Idiomes</button>
+        <div class="section" id ="section5">
+            <ul>
+                <li><b>Català:</b> Natiu</li>
+                <li><b>Castellà:</b> Natiu</li>
+                <li><b>Anglès:</b> B2</li>
+            </ul>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(6)">Competències</button>
+        <div class="section" id ="section6">
+            <p>Sóc un jove treballador i responsable, amb facilitat per treballar en equip i per prendre decisions.
+                Tot i que sóc una mica tímid, considero que tinc un bon nivell de comunicació verbal i escrita. Tinc
+                bon domini en programari d’ofimàtica, com Microsoft Word o Excel, a més de bona capacitat en
+                programació, especialment en C++ i Java, però també amb nocions de HTML, PHP, Javascript i CSS.</p>
+        </div>
+
+        <button class="accordion" onclick="showHideSection(7)">Altres dades d'interès</button>
+        <div class="section" id ="section7">
+            <ul>
+                <li><b>Disponibilitat:</b>
+                    <ul>
+                        <li><b>Data d'incorporació:</b> a concretar</li>
+                        <li><b>Preferència horària:</b> matins, certa flexibilitat</li>
+                    </ul>
+                </li>
+                <li><b>Carnet de conduir:</b> <bdi style="color:green; font-weight:bold">✓</bdi></li>
+            </ul>
+        </div>
+    </body>
+</html>
